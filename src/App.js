@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./App.css";
-import { ValidationComponent } from "./ValidationComponent/ValidationComponent";
-import { CharComponent } from "./CharComponent/CharComponent";
+import { Validation } from "./Validation/Validation";
+import { Char } from "./Char/Char";
 
 function App() {
   const [myText, setMyText] = useState("");
@@ -24,10 +24,10 @@ function App() {
         onChange={(event) => onChangeHandler(event)}
       />
       <p>{myText.length}</p>
-      <ValidationComponent length={myText.length} />
+      <Validation length={myText.length} />
 
       {myText.split("").map((char, index) => (
-        <CharComponent
+        <Char
           key={index}
           char={char}
           onClickCharHandler={() => onClickCharHandler(index)}

@@ -1,6 +1,6 @@
 import React from "react";
 
-export const CharComponent = ({ char, onClickCharHandler, index }) => (
+export const Char = ({ char, onClickCharHandler, index }) => (
   <p
     style={{
       display: "inline-block",
