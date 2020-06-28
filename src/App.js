@@ -7,7 +7,6 @@ function App() {
   const [myText, setMyText] = useState("");
 
   const onChangeHandler = (event) => {
-    console.log(event.target.value);
     setMyText(event.target.value);
   };
 
